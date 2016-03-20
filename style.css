@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300);
+@font-face {
+  font-family: 'Social';
+  src: url(fontello.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+	margin: 0; padding:0; border:0;
+}
+html {
+	background-color: #3d3331;
+}
+body {
+	margin: auto;
+	font-family: Merriweather, sans-serif;
+	font-size: 16pt;
+	color: #666;
+}
+h1 {
+	text-align: center;
+	font-size: 64pt;
+}
+#head {
+    position: absolute;
+	background-image:url(claus.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    left:-15px;
+    right:-15px;
+    top:-15px;
+    bottom:-15px;
+    filter: blur(15px) brightness(0.75);
+    -webkit-filter: blur(35px) brightness(0.75);
+    -moz-filter: blur(35px) brightness(0.75);
+    -ms-filter: blur(35px) brightness(0.75);
+    -o-filter: blur(35px) brightness(0.75);
+    z-index: 1;	
+    height: 300px;
+    overflow: hidden;
+}
+#image {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border: 15px solid #fff;
+	border-radius: 50%;
+	background: url(claus.jpg) 0 0 no-repeat;
+	background-size: cover;
+	margin: 120px auto;
+	z-index: 2;
+}
+#info {
+	margin-top: -236px;
+	background-color: #eee;
+	padding: 140px 0 90px 0;
+}
+#description {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24pt;
+	text-align: center;
+	margin-top: 25px;
+	background-color: #eee;
+}
+#links {
+	background-color: #fff;
+	padding: 50px;
+	text-align: center;
+}
+a:link, a:hover, a:visited, a:active {
+	font-family: Social;
+	font-size: 64pt;
+	padding: 25px;
+	text-decoration: none;
+	color: #c1275f;
+	border-radius: 25px;
+}
+a:hover {
+	font-family: Social;
+	color: #6d6361;
+	padding: 25px;
+	text-decoration: none;
+	border-radius: 5px;
+}
