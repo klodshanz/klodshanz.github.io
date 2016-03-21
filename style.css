@@ -17,10 +17,18 @@ body {
 	font-family: Merriweather, sans-serif;
 	font-size: 16pt;
 	color: #666;
+	overflow: hidden;
 }
 h1 {
 	text-align: center;
 	font-size: 64pt;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28pt;
+	text-align: center;
+	margin-top: 25px;
+	font-weight: normal;
 }
 #head {
     position: absolute;
@@ -56,15 +64,8 @@ h1 {
 }
 #info {
 	margin-top: -236px;
-	background-color: #eee;
-	padding: 140px 0 90px 0;
-}
-#description {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24pt;
-	text-align: center;
-	margin-top: 25px;
-	background-color: #eee;
+	background-color: #eaeaea;
+	padding: 140px 0 60px 0;
 }
 #links {
 	background-color: #fff;
@@ -81,7 +82,7 @@ a:link, a:hover, a:visited, a:active {
 }
 a:hover {
 	font-family: Social;
-	color: #6d6361;
+	color: #3d3331;
 	padding: 25px;
 	text-decoration: none;
 	border-radius: 5px;
