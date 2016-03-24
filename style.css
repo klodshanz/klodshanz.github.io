@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300);
 @font-face {
-  font-family: 'Social';
+  font-family: 'Fontello-Socials';
   src: url(fontello.ttf);
   font-weight: normal;
   font-style: normal;
@@ -9,15 +9,12 @@
 * {
 	margin: 0; padding:0; border:0;
 }
-html {
-	background-color: #3d3331;
-}
 body {
 	margin: auto;
 	font-family: Merriweather, sans-serif;
 	font-size: 16pt;
 	color: #666;
-	overflow: hidden;
+	background-color: #3d3331;
 }
 h1 {
 	text-align: center;
@@ -31,59 +28,61 @@ h2 {
 	font-weight: normal;
 }
 #head {
-    position: absolute;
-	background-image:url(claus.jpg);
+	position: relative;
+	height: 280px;
+	overflow: hidden;
+}
+#blur {
+	position: absolute;
+	background-image: url(claus.jpg);
+	background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    left:-15px;
-    right:-15px;
-    top:-15px;
-    bottom:-15px;
+	left:-26px;
+    right:-26px;
+    top:-26px;
+    bottom:-26px;
     filter: blur(15px) brightness(0.75);
     -webkit-filter: blur(35px) brightness(0.75);
     -moz-filter: blur(35px) brightness(0.75);
-    -ms-filter: blur(35px) brightness(0.75);
+    -ms-filter: blur(135px) brightness(0.75);
     -o-filter: blur(35px) brightness(0.75);
-    z-index: 1;	
-    height: 300px;
-    overflow: hidden;
 }
 #image {
-	position: relative;
+	position: absolute;
+	left:0;
+	margin-left: auto;
+	right:0;
+	margin-right: auto;
+	margin-top: -310px;
 	width: 250px;
 	height: 250px;
 	border: 15px solid #fff;
 	border-radius: 50%;
 	background: url(claus.jpg) 0 0 no-repeat;
 	background-size: cover;
-	margin: 120px auto;
-	z-index: 2;
 }
 #info {
-	margin-top: -236px;
 	background-color: #eaeaea;
 	padding: 140px 0 60px 0;
 }
-#links {
-	background-color: #fff;
+ul#social {
+	text-align: center;	
 	padding: 50px;
-	text-align: center;
+	background-color: #fff;
 }
-a:link, a:hover, a:visited, a:active {
-	font-family: Social;
-	font-size: 64pt;
+ul#social li {
+	display: inline;
 	padding: 25px;
+}
+ul#social li a {
+	font-family: Fontello-Socials;
+	font-size: 64pt;
 	text-decoration: none;
 	color: #c1275f;
-	border-radius: 25px;
 }
-a:hover {
-	font-family: Social;
+ul#social li a:hover {
 	color: #3d3331;
-	padding: 25px;
-	text-decoration: none;
-	border-radius: 5px;
 }
